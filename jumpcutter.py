@@ -167,7 +167,7 @@ for chunk in chunks:
 
     #outputAudioData[outputPointer:endPointer] = alteredAudioData/maxAudioVolume
 
-    # smooth out transitiion's audio by quickly fading in/out
+    # smooth out transition's audio by quickly fading in/out
     
     if leng < AUDIO_FADE_ENVELOPE_SIZE:
         outputAudioData[outputPointer:endPointer] = 0 # audio is less than 0.01 sec, let's just remove it.
